@@ -1,12 +1,11 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-import { Platform, Text } from 'react-native';
+// import { Tabs } from 'expo-router';
+import { Text } from 'react-native';
 
 export default function TabLayout() {
-  // const colorScheme = useColorScheme();
-
   return (
-    <><Text>hi~~~~</Text></>
+    <>
+      <Text>hi~~~~</Text>
+    </>
     // <Tabs
     //   screenOptions={{
     //     tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
