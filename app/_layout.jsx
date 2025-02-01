@@ -38,8 +38,9 @@ export default function RootLayout() {
           contentStyle: { backgroundColor: 'transparent' },
         }}
       >
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
+        <Stack.Screen name="index" />
+        <Stack.Screen name="(tabs)" />
+        {/* <Stack.Screen name="+not-found" /> */}
       </Stack>
       <StatusBar style="back" />
     </RootSafeView>
