@@ -9,7 +9,6 @@ import styled from 'styled-components';
 
 const RootSafeView = styled(SafeAreaView)`
   flex: 1;
-
   background-color: #f5f4f2;
 `;
 
@@ -36,11 +35,10 @@ export default function RootLayout() {
       <Stack
         screenOptions={{
           contentStyle: { backgroundColor: 'transparent' },
+          headerShown: false, // (tabs) 헤더 안 보이게
         }}
       >
-        <Stack.Screen name="index" />
         <Stack.Screen name="(tabs)" />
-        {/* <Stack.Screen name="+not-found" /> */}
       </Stack>
       <StatusBar style="back" />
     </RootSafeView>
