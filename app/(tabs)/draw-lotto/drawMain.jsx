@@ -30,20 +30,24 @@ const DrawMainScreen = () => {
     navigation.navigate('draw-lotto/randomDraw');
   };
 
-  const goToSelectDraw = () => {
-    
-  }
+  const goToSelectAllDraw = () => {
+    navigation.navigate('draw-lotto/selectDraw');
+  };
+
+  const goToSelectFiveDraw = () => {
+    navigation.navigate('draw-lotto/selectFiveDraw');
+  };
 
   return (
     <Container>
       <SelectContainer onPress={goToRandomDraw}>
         <Text>완전 랜덤으로 뽑기!</Text>
       </SelectContainer>
-      <SelectContainer>
-        <Text>내가 선택한 5개 이하 + 나머지 랜덤으로 뽑기!</Text>
-      </SelectContainer>
-      <SelectContainer>
+      <SelectContainer onPress={goToSelectAllDraw}>
         <Text>내가 선택한 숫자들 중 랜덤으로 뽑기!</Text>
+      </SelectContainer>
+      <SelectContainer onPress={goToSelectFiveDraw}>
+        <Text>내가 선택한 5개 이하 + 나머지 랜덤으로 뽑기!</Text>
       </SelectContainer>
     </Container>
   );

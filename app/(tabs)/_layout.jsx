@@ -23,6 +23,16 @@ const Layout = () => {
         // href:null => 탭바에서 안 보이게 숨기기
       />
       <Tabs.Screen
+        name="draw-lotto/selectDraw"
+        options={{ tabBarLabel: 'RandomDraw', href: null }}
+        // href:null => 탭바에서 안 보이게 숨기기
+      />
+      <Tabs.Screen
+        name="draw-lotto/selectFiveDraw"
+        options={{ tabBarLabel: 'RandomDraw', href: null }}
+        // href:null => 탭바에서 안 보이게 숨기기
+      />
+      <Tabs.Screen
         name="settings/settings"
         options={{ tabBarLabel: 'Settings' }}
       />
