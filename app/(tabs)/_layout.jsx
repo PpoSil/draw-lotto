@@ -1,11 +1,32 @@
 import { Tabs } from 'expo-router';
 import { NavigationContainer } from '@react-navigation/native';
 
+// const Layout = () => {
+//   return (
+//     <NavigationContainer independent={true}>
+//       <Tabs />
+//     </NavigationContainer>
+//   );
+// };
+
 const Layout = () => {
   return (
-    <NavigationContainer independent={true}>
-      <Tabs />
-    </NavigationContainer>
+    <Tabs screenOptions={{ headerShown: false }}>
+      <Tabs.Screen name="index" options={{ tabBarLabel: 'Home' }} />
+      <Tabs.Screen
+        name="draw-lotto/drawMain"
+        options={{ tabBarLabel: 'Draw' }}
+      />
+      <Tabs.Screen
+        name="draw-lotto/randomDraw"
+        options={{ tabBarLabel: 'RandomDraw', href: null }}
+        // href:null => 탭바에서 안 보이게 숨기기
+      />
+      <Tabs.Screen
+        name="settings/settings"
+        options={{ tabBarLabel: 'Settings' }}
+      />
+    </Tabs>
   );
 };
 

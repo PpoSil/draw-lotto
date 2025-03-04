@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styled from 'styled-components';
+import RandomDraw from './(tabs)/draw-lotto/randomDraw';
 
 const RootSafeView = styled(SafeAreaView)`
   flex: 1;
